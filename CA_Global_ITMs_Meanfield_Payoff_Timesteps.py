@@ -410,14 +410,14 @@ def process_lattice(params, trial, index):
 
                 if params['experiment'] == 'No ITMs':
                     if ITMs_remaining > 0:
-                        if necrotic_local_pay_off >= apoptotic_local_pay_off:# and necrotic_global_pay_cost <= apoptotic_global_pay_cost:
+                        if necrotic_local_pay_off >= apoptotic_local_pay_off:
                            strategy = params['_necrotic']
                         else:
                            strategy = params['_apoptotic']
                     else:
                        strategy = params['_activated']
                 elif params['experiment'] == 'No Activated':
-                    if necrotic_local_pay_off >= apoptotic_local_pay_off:# and necrotic_global_pay_cost <= apoptotic_global_pay_cost:
+                    if necrotic_local_pay_off >= apoptotic_local_pay_off:
                         strategy = params['_necrotic']
                     else:
                         strategy = params['_apoptotic']
